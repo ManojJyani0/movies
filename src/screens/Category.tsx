@@ -7,7 +7,21 @@ import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {ProductT} from '../types';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Category'>;
-
+// const getPageData = async (pageNumber: number, limit: number) => {
+//     const url = `https://dummyjson.com/products/category?page=${pageNumber}&limit=${limit}`;
+    
+//     try {
+//       const response = await fetch(url);
+//       const data = await response.json();
+    
+//       // Process the received data
+//     //   console.log(data);
+//         return data.products as ProductT[];
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   };
+//no need to this page because there are not data 
 const Category = ({
   route: {
     params: {cetegory},
